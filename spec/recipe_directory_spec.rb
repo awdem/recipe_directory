@@ -33,9 +33,9 @@ RSpec.describe RecipeDirectory do
     
     recipe = repo.find_by_id(3)
     
-    expect(recipe[2].id).to eq 3
-    expect(recipe[2].name).to eq 'Choriza and Broccoli Pasta'
-    expect(recipe[2].cooking_time).to eq 15
-    expect(recipe[2].rating).to eq 5
+    expect(recipe.id).to eq 3
+    expect(recipe.name).to eq 'Choriza and Broccoli Pasta'
+    expect(recipe.cooking_time).to eq 15
+    expect(recipe.rating).to eq 5
   end
 end
