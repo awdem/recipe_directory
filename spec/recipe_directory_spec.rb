@@ -27,4 +27,15 @@ RSpec.describe RecipeDirectory do
     expect(recipes[-1].cooking_time).to eq 4
     expect(recipes[-1].rating).to eq 2
   end
+  
+  it "returns a single recipe when searched by ID" do
+    repo = RecipeDirectory.new
+    
+    recipe = repo.find_by_id(3)
+    
+    expect(recipe[2].id).to eq 3
+    expect(recipe[2].name).to eq 'Choriza and Broccoli Pasta'
+    expect(recipe[2].cooking_time).to eq 15
+    expect(recipe[2].rating).to eq 5
+  end
 end
