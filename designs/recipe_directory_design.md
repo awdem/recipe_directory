@@ -72,6 +72,6 @@ CREATE TABLE recipes (
 ## 5. Create the table.
 
 ```bash
-psql -h 127.0.0.1 recipes_directory < seeds.sql
-psql -h 127.0.0.1 recipes_directory_test < seeds.sql
+psql -h 127.0.0.1 recipes_directory < spec/seeds.sql
+psql -h 127.0.0.1 recipes_directory_test < spec/seeds.sql
 ```
