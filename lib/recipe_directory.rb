@@ -1,4 +1,4 @@
-require 'recipe'
+require_relative './recipe'
 
 class RecipeDirectory
   def all
@@ -31,7 +31,7 @@ class RecipeDirectory
     recipe.name = result['name']
     recipe.cooking_time = result['cooking_time'].to_i
     recipe.rating = result['rating'].to_i
-    
+
     return recipe
   end
 end
